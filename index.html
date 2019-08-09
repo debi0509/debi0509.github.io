@@ -98,5 +98,30 @@
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
+	<!-- MAP VISU -->
+<!-- degrés celsius, mm/jour, km/h, % -->
+<div id='Mapping' class="w3-theme-l4">
+  <div class="w3-container w3-text-theme">
+  <h2 >Etude exhaustive des variables climatiques des différentes stations</h2></div>
+  <div id = "checkboxes" style="text-indent:20px;">
+    <input class="direction" type="radio" name="checkbox" value="MinTemp" onclick="changeVariable('MinTemp')" checked>
+    minTemp
+    <input class="direction" type="radio" name="checkbox" value="MaxTemp" onclick="changeVariable('MaxTemp')">
+    maxTemp
+    <input class="direction" type="radio" name="checkbox" value="Rainfall" onclick="changeVariable('Rainfall')" >
+    Rainfall
+    <input class="direction" type="radio" name="checkbox" value="WindGustSpeed" onclick="changeVariable('WindGustSpeed')">
+    Wind
+    <input class="direction" type="radio" name="checkbox" value="Humidity9am" onclick="changeVariable('Humidity9am')">
+    Humidity
+  </div>
+
+  <div id="map-top" class="block">
+  </div>
+  <div id="chart-bottom" class="block">
+  </div>
+
+  <script src="map.js"></script>
+
 </body>
 </html>
